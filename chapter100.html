@@ -1,0 +1,720 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>match式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+    
+    
+        
+        <link rel="stylesheet" href="forkme.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter105.html" />
+    
+    
+    <link rel="prev" href="chapter90.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Scala勉強会
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter10.html">
+            
+                <a href="chapter10.html">
+            
+                    
+                    Scalaの概要
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter20.html">
+            
+                <a href="chapter20.html">
+            
+                    
+                    Scalaのメリット
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter30.html">
+            
+                <a href="chapter30.html">
+            
+                    
+                    Scalaの環境構築
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter40.html">
+            
+                <a href="chapter40.html">
+            
+                    
+                    Hello Scala World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="chapter50.html">
+            
+                <a href="chapter50.html">
+            
+                    
+                    構文と式と文
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="chapter60.html">
+            
+                <a href="chapter60.html">
+            
+                    
+                    メソッド定義
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="chapter70.html">
+            
+                <a href="chapter70.html">
+            
+                    
+                    if式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="chapter80.html">
+            
+                <a href="chapter80.html">
+            
+                    
+                    while式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="chapter90.html">
+            
+                <a href="chapter90.html">
+            
+                    
+                    for式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.5" data-path="chapter100.html">
+            
+                <a href="chapter100.html">
+            
+                    
+                    match式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="chapter105.html">
+            
+                <a href="chapter105.html">
+            
+                    
+                    型アノテーション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="chapter110.html">
+            
+                <a href="chapter110.html">
+            
+                    
+                    classとメソッドとフィールドとアクセス修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter120.html">
+            
+                <a href="chapter120.html">
+            
+                    
+                    objectとcase class
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter130.html">
+            
+                <a href="chapter130.html">
+            
+                    
+                    コレクション
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="chapter140.html">
+            
+                <a href="chapter140.html">
+            
+                    
+                    Array(配列)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="chapter150.html">
+            
+                <a href="chapter150.html">
+            
+                    
+                    Range
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="chapter160.html">
+            
+                <a href="chapter160.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="chapter170.html">
+            
+                <a href="chapter170.html">
+            
+                    
+                    Vector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="chapter180.html">
+            
+                <a href="chapter180.html">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="chapter190.html">
+            
+                <a href="chapter190.html">
+            
+                    
+                    set
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter200.html">
+            
+                <a href="chapter200.html">
+            
+                    
+                    トレイト
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter210.html">
+            
+                <a href="chapter210.html">
+            
+                    
+                    型パラメータ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="chapter220.html">
+            
+                <a href="chapter220.html">
+            
+                    
+                    型パラメータの境界
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter230.html">
+            
+                <a href="chapter230.html">
+            
+                    
+                    関数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="chapter240.html">
+            
+                <a href="chapter240.html">
+            
+                    
+                    カリー化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter250.html">
+            
+                <a href="chapter250.html">
+            
+                    
+                    case class（ケースクラス）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="chapter260.html">
+            
+                <a href="chapter260.html">
+            
+                    
+                    エラー処理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="chapter270.html">
+            
+                <a href="chapter270.html">
+            
+                    
+                    implicit conversion（暗黙の型変換）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="chapter280.html">
+            
+                <a href="chapter280.html">
+            
+                    
+                    implicit parameter（暗黙のパラメータ）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="chapter0.html">
+            
+                <a href="chapter0.html">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >match式</a>
+    </h1>
+    <!-- ForkMeOnGithubRibon -->
+    
+
+<a class="forkme" href="https://github.com/sugarnaoming/scala_newbie">Fork me on Github</a>
+
+
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="match&#x5F0F;">match&#x5F0F;</h1>
+<hr>
+<p>match&#x5F0F;&#x306F;Java&#x3084;C&#x3067;&#x8A00;&#x3046;switch-case&#x3068;<strong><em>&#x540C;&#x3058;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x308B;&#x5225;&#x3082;&#x306E;</em></strong>&#x3067;&#x3059;&#x3002;</p>
+<p>match&#x5F0F;&#x306E;&#x623B;&#x308A;&#x5024;&#x306F;&#x30DE;&#x30C3;&#x30C1;&#x3057;&#x305F;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306E;=&gt;&#x53F3;&#x8FBA;&#x306E;&#x5F0F;&#x3092;&#x8A55;&#x4FA1;&#x3057;&#x305F;&#x3082;&#x306E;&#x3068;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<p>match&#x5F0F;&#x306E;&#x57FA;&#x672C;&#x69CB;&#x6587;&#x306F;&#x6B21;&#x306E;&#x901A;&#x308A;&#x3067;&#x3059;&#x3002;</p>
+<blockquote>
+<p>&#x30DE;&#x30C3;&#x30C1;&#x5BFE;&#x8C61;&#x306E;&#x5F0F; match {</p>
+<p>case &#x30D1;&#x30BF;&#x30FC;&#x30F3;1 [if &#x30AC;&#x30FC;&#x30C9;1] =&gt; &#x5F0F;1</p>
+<p>case &#x30D1;&#x30BF;&#x30FC;&#x30F3;2 [if &#x30AC;&#x30FC;&#x30C9;2] =&gt; &#x5F0F;2</p>
+<p>case ...</p>
+<p>case &#x30D1;&#x30BF;&#x30FC;&#x30F3;N =&gt; &#x5F0F;N</p>
+<p>}</p>
+</blockquote>
+<pre><code class="lang-Scala"><span class="hljs-comment">// switch&#x306E;&#x3088;&#x3046;&#x306B;&#x4F7F;&#x3046;&#x3068;&#x3053;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;</span>
+<span class="hljs-keyword">val</span> hal = <span class="hljs-string">&quot;hal&quot;</span>
+<span class="hljs-keyword">val</span> whoAreYou = hal <span class="hljs-keyword">match</span> {
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;mode&quot;</span> =&gt; <span class="hljs-string">&quot;no&quot;</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;ikou&quot;</span> =&gt; <span class="hljs-string">&quot;no&quot;</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-string">&quot;hal&quot;</span> =&gt; <span class="hljs-string">&quot;yes&quot;</span>
+}
+
+<span class="hljs-comment">// &#x4EFB;&#x610F;&#x306E;&#x6570;&#x5024;&#x3082;&#x6271;&#x3048;&#x307E;&#x3059;&#x3002;</span>
+<span class="hljs-keyword">val</span> one = <span class="hljs-number">1</span>
+<span class="hljs-keyword">val</span> num = one <span class="hljs-keyword">match</span> {
+  <span class="hljs-keyword">case</span> <span class="hljs-number">1</span> =&gt; <span class="hljs-string">&quot;one&quot;</span>
+  <span class="hljs-keyword">case</span> <span class="hljs-number">2</span> =&gt; <span class="hljs-string">&quot;two&quot;</span>
+  <span class="hljs-keyword">case</span> _ =&gt; <span class="hljs-string">&quot;other&quot;</span>
+}
+<span class="hljs-comment">// &#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306B;&#x3042;&#x308B;_(&#x30A2;&#x30F3;&#x30C0;&#x30FC;&#x30B9;&#x30B3;&#x30A2;)&#x306F;&#x30EF;&#x30A4;&#x30EB;&#x30C9;&#x30AB;&#x30FC;&#x30C9;&#x3067;&#x3059;&#x3002;&#x3053;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3092;&#x30EF;&#x30A4;&#x30EB;&#x30C9;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3068;&#x3088;&#x3073;&#x307E;&#x3059;&#x3002;</span>
+<span class="hljs-comment">// &#x3053;&#x308C;&#x306F;switch&#x3067;&#x8A00;&#x3046;default&#x306E;&#x3088;&#x3046;&#x306A;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;&#x30EF;&#x30A4;&#x30EB;&#x30C9;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306F;&#x3059;&#x3079;&#x3066;&#x306E;&#x30B1;&#x30FC;&#x30B9;&#x306B;&#x30DE;&#x30C3;&#x30C1;&#x3057;&#x307E;&#x3059;&#x3002;</span>
+<span class="hljs-comment">// &#x30D5;&#x30A9;&#x30FC;&#x30EB;&#x30B9;&#x30EB;&#x30FC;&#x306F;&#x8D77;&#x3053;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;&#x3088;&#x3063;&#x3066;break&#x306F;&#x5FC5;&#x8981;&#x3042;&#x308A;&#x307E;&#x305B;&#x3093;&#x3002;</span>
+</code></pre>
+<p>&#x8907;&#x6570;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3092;&#x307E;&#x3068;&#x3081;&#x308B;&#x3053;&#x3068;&#x3082;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-Scala">one <span class="hljs-keyword">match</span> {
+  <span class="hljs-keyword">case</span> <span class="hljs-number">1</span> | <span class="hljs-number">2</span> =&gt;
+    println(<span class="hljs-string">&quot;first&quot;</span>)
+    println(<span class="hljs-string">&quot;second&quot;</span>)
+  <span class="hljs-keyword">case</span> _ =&gt; println(<span class="hljs-string">&quot;other&quot;</span>)
+}
+<span class="hljs-comment">// one&#x304C;1&#x3082;&#x3057;&#x304F;&#x306F;2&#x306E;&#x5834;&#x5408;&#x306F;firest&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</span>
+</code></pre>
+<p>switch-case&#x4EE5;&#x5916;&#x306E;&#x4F7F;&#x3044;&#x65B9;&#x3068;&#x3057;&#x3066;&#x30B3;&#x30EC;&#x30AF;&#x30B7;&#x30E7;&#x30F3;&#x8981;&#x7D20;&#x306E;&#x4E00;&#x90E8;&#x306B;&#x30DE;&#x30C3;&#x30C1;&#x3055;&#x305B;&#x308B;&#x4F7F;&#x3044;&#x65B9;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-Scala"><span class="hljs-keyword">val</span> lst = <span class="hljs-type">List</span>(<span class="hljs-string">&quot;A&quot;</span>, <span class="hljs-string">&quot;B&quot;</span>, <span class="hljs-string">&quot;C&quot;</span>, <span class="hljs-string">&quot;D&quot;</span>, <span class="hljs-string">&quot;E&quot;</span>)
+lst <span class="hljs-keyword">match</span> {
+  <span class="hljs-keyword">case</span> <span class="hljs-type">List</span>(a, <span class="hljs-string">&quot;B&quot;</span>, c, d, e) =&gt;
+    println(<span class="hljs-string">&quot;a = &quot;</span> + a)
+    println(<span class="hljs-string">&quot;c = &quot;</span> + c)
+    println(<span class="hljs-string">&quot;d = &quot;</span> + d)
+    println(<span class="hljs-string">&quot;e = &quot;</span> + e)
+  <span class="hljs-keyword">case</span> _ =&gt; println(<span class="hljs-string">&quot;nothing&quot;</span>)
+  <span class="hljs-comment">// &#x201D;List&#x306E;2&#x756A;&#x76EE;&#x306E;&#x8981;&#x7D20;&#x304C;B&#x304B;&#x3064;&#x8981;&#x7D20;&#x6570;&#x304C;5&#x500B;&#x201D;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306B;&#x30DE;&#x30C3;&#x30C1;&#x3059;&#x308B;&#x3068;&#x3001;a, c, d, e&#x306B;&#x5909;&#x6570;lst&#x306E;2&#x756A;&#x76EE;&#x3092;&#x8997;&#x3044;&#x305F;&#x6B8B;&#x308A;&#x306E;&#x8981;&#x7D20;&#x304C;&#x675F;&#x7E1B;&#x3055;&#x308C;=&gt;&#x306E;&#x53F3;&#x8FBA;&#x306E;&#x5F0F;&#x304C;&#x8A55;&#x4FA1;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</span>
+}
+</code></pre>
+<p>&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x3067;&#x306F;&#x30AC;&#x30FC;&#x30C9;&#x5F0F;&#x304C;&#x4F7F;&#x3048;&#x307E;&#x3059;&#x3002;
+&#x30AC;&#x30FC;&#x30C9;&#x5F0F;&#x306B;&#x3082;&#x30DE;&#x30C3;&#x30C1;&#x3057;&#x306A;&#x3051;&#x308C;&#x3070;=&gt;&#x306E;&#x53F3;&#x8FBA;&#x306E;&#x5F0F;&#x306F;&#x8A55;&#x4FA1;&#x3055;&#x308C;&#x307E;&#x305B;&#x3093;</p>
+<pre><code class="lang-Scala">lst <span class="hljs-keyword">match</span> {
+  <span class="hljs-keyword">case</span> <span class="hljs-type">List</span>(<span class="hljs-string">&quot;A&quot;</span>, b, c, d, e) <span class="hljs-keyword">if</span> b != <span class="hljs-string">&quot;B&quot;</span> =&gt;
+    println(<span class="hljs-string">&quot;b = &quot;</span> + b)
+    println(<span class="hljs-string">&quot;c = &quot;</span> + c)
+    println(<span class="hljs-string">&quot;d = &quot;</span> + d)
+    println(<span class="hljs-string">&quot;e = &quot;</span> + e)
+  <span class="hljs-keyword">case</span> _ =&gt;
+    println(<span class="hljs-string">&quot;nothing&quot;</span>)
+  <span class="hljs-comment">// &#x30AC;&#x30FC;&#x30C9;&#x5F0F;&#x306F;Boolean&#x578B;&#x3067;&#x306A;&#x3051;&#x308C;&#x3070;&#x306A;&#x308A;&#x307E;&#x305B;&#x3093;</span>
+  <span class="hljs-comment">// List&#x306E;&#x5148;&#x982D;&#x304C;A&#x304B;&#x3064;&#x5909;&#x6570;b&#x306B;&#x675F;&#x7E1B;&#x3055;&#x308C;&#x305F;&#x5024;&#x304C;B&#x3067;&#x306A;&#x3044;&#x5834;&#x5408;&#x306E;&#x307F;&#x30DE;&#x30C3;&#x30C1;&#x3057;&#x307E;&#x3059;&#x3002;</span>
+}
+</code></pre>
+<p>&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306F;&#x30CD;&#x30B9;&#x30C8;&#x3055;&#x308C;&#x305F;&#x3082;&#x306E;&#x3082;&#x5BFE;&#x8C61;&#x306B;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-Scala"><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Game</span>(<span class="hljs-params">title: <span class="hljs-type">String</span>, price: <span class="hljs-type">Int</span>, type: <span class="hljs-type">String</span></span>)</span>
+
+<span class="hljs-keyword">val</span> rockman = <span class="hljs-keyword">new</span> <span class="hljs-type">Game</span>(<span class="hljs-string">&quot;rockman&quot;</span>, <span class="hljs-number">4900</span>, <span class="hljs-string">&quot;ACT&quot;</span> )
+<span class="hljs-keyword">val</span> gradius = <span class="hljs-keyword">new</span> <span class="hljs-type">Game</span>(<span class="hljs-string">&quot;gradius&quot;</span>, <span class="hljs-number">3200</span>, <span class="hljs-string">&quot;STG&quot;</span>)
+<span class="hljs-keyword">val</span> wizardry = <span class="hljs-keyword">new</span> <span class="hljs-type">Game</span>(<span class="hljs-string">&quot;wizardry&quot;</span>, <span class="hljs-number">5200</span>, <span class="hljs-string">&quot;RPG&quot;</span>)
+<span class="hljs-comment">// Map&#x306F;&#x9023;&#x60F3;&#x914D;&#x5217;&#xFF08;HashMap&#xFF09;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</span>
+<span class="hljs-keyword">for</span>(item = <span class="hljs-type">Map</span>(<span class="hljs-number">1</span> -&gt; rockman, <span class="hljs-number">2</span> -&gt; gradius, <span class="hljs-number">3</span> -&gt; wizardry) {
+  item <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> p @ (<span class="hljs-type">Game</span>(_, _, <span class="hljs-string">&quot;RPG&quot;</span>) ) =&gt; printf(<span class="hljs-string">&quot;%s is hack and slash\n&quot;</span>, p)
+    <span class="hljs-keyword">case</span> p @ (<span class="hljs-type">Game</span>(_, _, _) ) =&gt; printf(<span class="hljs-string">&quot;%s is Other&quot;</span>\n, p)
+  }
+}
+<span class="hljs-comment">// &#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306E;&#x524D;&#x306E;@&#x306F;&#x201D;as&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x201D;&#x3068;&#x547C;&#x3070;&#x308C;&#x308B;&#x3082;&#x306E;&#x3067;&#x3059;&#x3002;@&#x306E;&#x3042;&#x3068;&#x306B;&#x7D9A;&#x304F;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x306B;&#x30DE;&#x30C3;&#x30C1;&#x3059;&#x308B;&#x5F0F;&#x3092;@&#x306E;&#x524D;&#x306E;&#x5909;&#x6570;&#x306B;&#x675F;&#x7E1B;&#x3057;&#x307E;&#x3059;&#x3002;</span>
+<span class="hljs-comment">// |(&#x8907;&#x6570;&#x30DE;&#x30C3;&#x30C1;)&#x3092;&#x4F7F;&#x3063;&#x305F;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x306E;&#x5834;&#x5408;&#x306F;&#x5024;&#x3092;&#x53D6;&#x308A;&#x51FA;&#x3059;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x305B;&#x3093;&#x3002;</span>
+</code></pre>
+<p>&#x5024;&#x304C;&#x7279;&#x5B9A;&#x306E;&#x578B;&#x306B;&#x6240;&#x5C5E;&#x3059;&#x308B;&#x5834;&#x5408;&#x306E;&#x307F;&#x30DE;&#x30C3;&#x30C1;&#x3059;&#x308B;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3082;&#x4F7F;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<pre><code class="lang-Scala"><span class="hljs-keyword">val</span> obj: <span class="hljs-type">AnyRef</span> = <span class="hljs-string">&quot;String Literal&quot;</span>
+obj <span class="hljs-keyword">match</span> {
+  <span class="hljs-keyword">case</span> v: java.lang.<span class="hljs-type">Integer</span> =&gt;
+    println(<span class="hljs-string">&quot;Integer&quot;</span>)
+  <span class="hljs-keyword">case</span> v: <span class="hljs-type">String</span> =&gt;
+    println(v.toUpperCase(<span class="hljs-type">Locale</span>.<span class="hljs-type">ENGLISH</span>) )
+  <span class="hljs-comment">// AnyRef&#x578B;&#x306F;Java&#x306E;Object&#x578B;&#x306B;&#x76F8;&#x5F53;&#x3059;&#x308B;&#x578B;&#x3067;&#x3001;&#x3042;&#x3089;&#x3086;&#x308B;&#x53C2;&#x7167;&#x578B;&#x306E;&#x5024;&#x3092;AnyRef&#x578B;&#x306E;&#x5909;&#x6570;&#x306B;&#x683C;&#x7D0D;&#x3059;&#x308B;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</span>
+  <span class="hljs-comment">// &#x578B;&#x3067;&#x30DE;&#x30C3;&#x30C1;&#x3057;&#x305F;&#x5024;&#x306F;&#x3001;&#x305D;&#x306E;&#x578B;&#x306B;&#x30AD;&#x30E3;&#x30B9;&#x30C8;&#x3057;&#x305F;&#x306E;&#x3068;&#x540C;&#x3058;&#x3088;&#x3046;&#x306B;&#x6271;&#x3046;&#x3053;&#x3068;&#x304C;&#x3067;&#x304D;&#x307E;&#x3059;</span>
+  <span class="hljs-comment">// &#x3057;&#x3070;&#x3057;&#x3070;&#x3001;Scala&#x3067;&#x306F;&#x30AD;&#x30E3;&#x30B9;&#x30C8;&#x306E;&#x4EE3;&#x308F;&#x308A;&#x306B;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x304C;&#x7528;&#x3044;&#x3089;&#x308C;&#x308B;&#x3053;&#x3068;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</span>
+  <span class="hljs-comment">// &#x578B;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x3067;&#x306F;Scala&#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;JVM&#x306E;&#x5236;&#x7D04;&#x306B;&#x3088;&#x308A;&#x3001;&#x578B;&#x5909;&#x6570;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3092;&#x4F7F;&#x3063;&#x305F;&#x5834;&#x5408;&#x306B;&#x6B63;&#x3057;&#x304F;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x304C;&#x884C;&#x308F;&#x308C;&#x307E;&#x305B;&#x3093;&#x3002;</span>
+  <span class="hljs-comment">// &#x578B;&#x5909;&#x6570;&#x30D1;&#x30E9;&#x30E1;&#x30FC;&#x30BF;&#x3092;&#x542B;&#x3080;&#x578B;&#x306E;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x30DE;&#x30C3;&#x30C1;&#x306F;&#x30EF;&#x30A4;&#x30EB;&#x30C9;&#x30AB;&#x30FC;&#x30C9;&#x30D1;&#x30BF;&#x30FC;&#x30F3;&#x3092;&#x4F7F;&#x3046;&#x3088;&#x826F;&#x3044;&#x3067;&#x3059;&#x3002;</span>
+}
+</code></pre>
+<blockquote>
+<p>toUpperCase&#x306E;&#x5F15;&#x6570;&#x3067;&#x3042;&#x308B;Locale.ENGLISH&#x306F;&#x30A2;&#x30C3;&#x30D1;&#x30FC;&#x30B1;&#x30FC;&#x30B9;&#x306B;&#x5909;&#x63DB;&#x3059;&#x308B;&#x969B;&#x306E;&#x5909;&#x63DB;&#x5148;&#x306E;&#x8A00;&#x8A9E;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p>&#x5F15;&#x6570;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x306A;&#x3044;&#x5834;&#x5408;&#x3001;&#x5909;&#x63DB;&#x5148;&#x306E;&#x8A00;&#x8A9E;&#x306F;&#x30E6;&#x30FC;&#x30B6;&#x306E;&#x8A00;&#x8A9E;&#x8A2D;&#x5B9A;&#x306B;&#x4F9D;&#x5B58;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x4F9D;&#x5B58;&#x3092;&#x56DE;&#x907F;&#x3059;&#x308B;&#x305F;&#x3081;&#x306B;&#x3067;&#x304D;&#x308C;&#x3070;&#x6307;&#x5B9A;&#x3057;&#x307E;&#x3057;&#x3087;&#x3046;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter90.html" class="navigation navigation-prev " aria-label="Previous page: for式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter105.html" class="navigation navigation-next " aria-label="Next page: 型アノテーション">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"match式","level":"1.6.5","depth":2,"next":{"title":"型アノテーション","level":"1.7","depth":1,"path":"chapter105.md","ref":"chapter105.md","articles":[]},"previous":{"title":"for式","level":"1.6.4","depth":2,"path":"chapter90.md","ref":"chapter90.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"forkme.css"}},"file":{"path":"chapter100.md","mtime":"2017-02-24T02:14:11.403Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-28T10:12:09.617Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
